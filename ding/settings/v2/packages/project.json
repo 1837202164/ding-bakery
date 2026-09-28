@@ -1,0 +1,12 @@
+{
+  "screen": {
+    "__version__": "1.0.0",
+    "designResolution": {
+      "width": 1280,
+      "height": 720,
+      "fitWidth": true,
+      "fitHeight": false
+    },
+    "deviceOrientation": "landscape"
+  }
+}

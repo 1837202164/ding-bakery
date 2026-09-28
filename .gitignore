@@ -1,0 +1,38 @@
+# Dependencies & build
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+**/project.private.config.json
+
+# Cocos Creator
+library/
+temp/
+local/
+profiles/
+native/
+**/build/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.log
+
+# Local / agent scratch (not part of the game)
+SKILL-LIST.md
+.cursor/
+*.canvas.tsx
+
+# Vite cache
+preview/.vite/

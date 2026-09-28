@@ -1,0 +1,18 @@
+{
+  "description": "叮—— 治愈烘焙小店",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "game",
+  "libVersion": "3.3.4",
+  "appid": "touristappid",
+  "projectname": "ding",
+  "condition": {}
+}
