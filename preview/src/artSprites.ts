@@ -55,4 +55,18 @@ export const ArtPaths = {
   clerk: '/art/characters/clerk-front.png',
   customerPink: '/art/characters/customer-pink.png',
   customerBlue: '/art/characters/customer-blue.png',
+  customerYellow: '/art/characters/customer-yellow.png',
+  customerMint: '/art/characters/customer-mint.png',
+  customerDenim: '/art/characters/customer-denim.png',
+  customerKid: '/art/characters/customer-kid.png',
 } as const;
+
+/** 客人立绘池（刷客时轮换） */
+export const CustomerArtPool = [
+  ArtPaths.customerPink,
+  ArtPaths.customerBlue,
+  ArtPaths.customerYellow,
+  ArtPaths.customerMint,
+  ArtPaths.customerDenim,
+  ArtPaths.customerKid,
+] as const;

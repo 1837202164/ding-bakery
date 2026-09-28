@@ -5,7 +5,7 @@ import { buildBakeryDecor, createCapsuleLike, createChairSet, createCustomerFigu
 import { productIcon } from './productIcon';
 import type { UnlockId } from './sim/Types';
 import { loadSave, writeSave } from './save';
-import { ArtPaths, createArtBillboard } from './artSprites';
+import { ArtPaths, CustomerArtPool, createArtBillboard } from './artSprites';
 
 const hud = document.getElementById('hud');
 const msg = document.getElementById('msg');
@@ -417,9 +417,7 @@ function syncCustomers(): void {
       root.userData.customerId = customer.id;
       const fallback = createCustomerFigure(color);
       root.add(fallback);
-      const artUrl = customer.id.charCodeAt(customer.id.length - 1) % 2 === 0
-        ? ArtPaths.customerPink
-        : ArtPaths.customerBlue;
+      const artUrl = CustomerArtPool[customer.id.charCodeAt(customer.id.length - 1) % CustomerArtPool.length];
       root.add(createArtBillboard(artUrl, 0.95, 1.2, () => {
         fallback.visible = false;
       }));

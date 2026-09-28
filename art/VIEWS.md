@@ -1,6 +1,8 @@
 # 《叮——》美术：六视面正交规范
 
-最终进游戏是 **固定相机简易 3D**。概念阶段每个可建模资产出 **6 个正交视面**（不是只出前三视图）。
+最终进游戏是 **固定相机简易 3D**（可含小开放街区拼装）。概念阶段每个可建模资产出 **6 个正交视面**（不是只出前三视图）。
+
+转换优先级与状态见 [`MODELING.md`](MODELING.md)。
 
 ## 六视面
 
@@ -21,23 +23,19 @@
 
 裁切脚本：`art/scripts/split_6view.py`（对所有 `*-6view.png` 按 2×3 均分裁切；只写 `art/views/`，不同步 public）。
 
-
 ## 画法
 
 - 正交、无透视；六面同一比例  
 - 韩系 Q 版（开间小店气质）  
 - 奶白/白底，无水印、无装饰字  
 
-## 目录
+## 当前目录（`art/views/`）
 
 ```
-art/views/
-  clerk/
-  customer-pink/
-  customer-blue/
-  oven/
-  counter/
-  table-chair/
-  cabinet/
-  window-wall/
+clerk/
+customer-pink/  customer-blue/  customer-yellow/
+customer-mint/  customer-denim/ customer-kid/
+oven/  counter/  table-chair/  cabinet/  window-wall/
+wall-shelf/  mini-fridge/  cash-register/
+fountain/  street-lamp/  bench/
 ```
